@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  editor:
+    image: swaggerapi/swagger-editor
+    restart: always
+    ports:
+      - 9001:8080
+    volumes:
+      - ./../spec/0.0.1:/tmp
+    environment: 
+        SWAGGER_FILE: /tmp/openapi.json

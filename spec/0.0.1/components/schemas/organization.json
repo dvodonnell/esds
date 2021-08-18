@@ -1,0 +1,19 @@
+{
+    "type": "object",
+    "required": [
+        "name"
+    ],
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "payments" : {},
+        "dataEntities" : {},
+        "dataEntityStorageLocations" : {},
+        "ownership" : {
+
+        },
+        "services" : {},
+        "goods" : {}
+    }
+}

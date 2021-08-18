@@ -1,0 +1,31 @@
+{
+    "type": "object",
+    "required": [],
+    "description" : "Describes an exchange of goods, services and/or labour for monetary payment.",
+    "properties": {
+        "type": {
+            "description" : "Describes whether the transaction was for a good, service, or labour",
+            "type": "string",
+            "enum" : [
+                "GOOD",
+                "SERVICE",
+                "LABOUR"
+            ],
+            "required" : true
+        },
+        "payeeType" : {
+            "type" : "string",
+            "enum" : [
+                "PERSON",
+                "ORGANIZATION"
+            ]
+        },
+        "payee" : {},
+        "good" : {},
+        "service" : {},
+        "goodDelivery" : {},
+        "amount" : {},
+        "currency" : {},
+        "date" : {}
+    }
+}

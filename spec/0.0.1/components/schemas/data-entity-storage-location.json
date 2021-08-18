@@ -1,0 +1,26 @@
+{
+    "type": "object",
+    "required": [],
+    "description" : "Describes a storage location (storage system and geography) for an individual data entity.",
+    "properties": {
+        "jurisdition": {
+            "description" : "Can be ISO 3166 or ISO 3166-2",
+            "type": "string"
+        },
+        "database" : {
+            "type" : "string",
+            "description" : "Database provider for this storage location."
+        },
+        "encrypted" : {
+            "type" : "boolean",
+            "required" : true
+        },
+        "encryption" : {
+            "type" : "string",
+            "enum" : [
+                "NONE",
+                "AES256"
+            ]
+        }
+    }
+}

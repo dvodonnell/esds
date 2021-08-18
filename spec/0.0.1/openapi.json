@@ -1,0 +1,21 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+      "title": "Externality Source Data Standard",
+      "version": "1.0.0"
+    },
+    "paths": {
+        "/organization" : {
+            "get" : {
+                
+            }
+        }
+    },
+    "components": {
+      "schemas": {
+        "organization": {
+          "$ref": "./components/schemas/organization.json"
+        }
+      }
+    }
+  }
